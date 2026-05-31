@@ -1,0 +1,16 @@
+# Python rules
+# https://registry.bazel.build/modules/rules_python
+bazel_dep(name = "rules_python", version = "2.0.2")
+
+# C++ Rules
+# https://registry.bazel.build/modules/rules_cc
+bazel_dep(name = "rules_cc", version = "0.2.18")
+
+# Google Test C++ package
+# https://registry.bazel.build/modules/googletest
+bazel_dep(name = "googletest", version = "1.17.0")
+
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(
+    python_version = "3.12.13",
+)
