@@ -6,5 +6,5 @@ cc_library(
         "hello.cc",
         "hello.hh",
     ],
-    visibility = ["//src:__pkg__"],
+    visibility = ["//src:__subpackages__"],
 )

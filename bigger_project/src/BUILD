@@ -6,6 +6,6 @@ cc_binary(
         "main.cc",
         "main.hh",
     ],
-    visibility = ["//src:__pkg__"],
+    visibility = ["//:__subpackages__"],
     deps = ["//src/hello"],
 )
