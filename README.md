@@ -34,7 +34,7 @@ Extensions:
 
 ## Task List
 
-### 1) Verify Bazel install
+### 1) Install bazelisk
 
 **New feature:** Bazel CLI basics
 
@@ -42,6 +42,14 @@ Extensions:
 - Run `bazel version` and `bazel help`.
 
 **Done when:** You can run Bazel commands successfully.
+
+#### 1.1) (Optional) Install Bazel VSCode extension
+
+- The Bazel VSCode extension provides you with syntax highlighting in VSCode
+
+#### 1.2) (Optional) Install `buildifier`
+
+- `buildifier` will highligh formatting issues in our Bazel files
 
 ### 2) Initialize a Bazel workspace
 
@@ -138,23 +146,26 @@ Example bazel command to run all small tests:
 bazel test --test_size_filters=small //:all
 ```
 
-### 12) Write a simple Starlark macro
+### 12) Write a Starlark macro
 
 **New feature:** `.bzl` macros
 
-- Create macro wrapping repeated target patterns.
-- Use macro in at least two packages.
+#### 12.1) File list
 
-**Done when:** Repetition in BUILD files decreases.
+- Create the macro `file_list` where `file_list(0)` returns `[file0.txt]`, `file_list(0)`
+  returns `[file0.txt, file1.txt]` and so on
+- Write a rule which creates all the files in the output list
 
-### 13) Write a custom Starlark rule
+**Done when:** The bazel build comman outputs `n` files in `bazel-bin` (`n` may be a constant in `BUILD`)
+
+#### 12.2) Custom rule
 
 **New feature:** `rule()`, `ctx.actions`
 
-- Implement a tiny custom rule (for example transform text, validate schema, etc.).
+- Implement a tiny custom rule (for example transform text, print text to file, etc.).
 - Expose useful outputs/providers.
 
-**Done when:** Custom rule runs as part of normal build graph.
+**Done when:** Your custom rule produces the custom output
 
 ### 14) Explore dependency graph with query
 
