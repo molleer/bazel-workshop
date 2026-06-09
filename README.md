@@ -39,7 +39,7 @@ Extensions:
 **New feature:** Bazel CLI basics
 
 - Install Bazel or Bazelisk.
-- Run `bazel version` and `bazel help`.
+- Run `bazelisk version` and `bazelisk help`.
 
 **Done when:** You can run Bazel commands successfully.
 
@@ -58,7 +58,7 @@ Extensions:
 - Create `MODULE.bazel` at repo root.
 - Add module name and version.
 
-**Done when:** `bazel info` works from the repo root.
+**Done when:** `bazelisk info` works from the repo root.
 
 ### 3) Bring in an external dependency using Bzlmod
 
@@ -76,7 +76,7 @@ Extensions:
 - Create one package (for example `app/`).
 - Add one executable target in your language.
 
-**Done when:** `bazel run //app:main` works.
+**Done when:** `bazelisk run //app:main` works.
 
 ### 5) Split code into libraries and binary
 
@@ -94,7 +94,7 @@ Extensions:
 - Add at least one unit test target.
 - Make one passing assertion.
 
-**Done when:** `bazel test //app:...` passes.
+**Done when:** `bazelisk test //app:...` passes.
 
 ### 7) Create a second package and use cross-package labels
 
@@ -130,7 +130,7 @@ Extensions:
 - Add config/template/input files consumed at runtime.
 - Access them via Bazel runfiles-friendly approach.
 
-**Done when:** `bazel run` works without relying on working-directory hacks.
+**Done when:** `bazelisk run` works without relying on working-directory hacks.
 
 ### 11) Introduce tags and test size metadata
 
