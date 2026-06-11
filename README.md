@@ -8,24 +8,27 @@ This repository includes examples of bazel projects along with execises which ar
 
 Bazelisk is a wrapper of Bazel and will install the relevant bazel version when running bazel commands.
 
-macOS
+**macOS**
 ```
 brew install bazelisk
 ```
-Windows
+**Windows**
 ```
 winget install Bazel.Bazelisk
 ```
 Install C++ essentials: https://aka.ms/vc14/vc_redist.x86.exe
-Ubuntu
+
+**Ubuntu**
 ```
 sudo apt-get install npm
 npm install -g @bazel/bazelisk
 ```
 
-Editor: [VS Code](https://code.visualstudio.com/download)
-Extensions:
-- [Bazel](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel)
+**Editor**
+
+[VS Code](https://code.visualstudio.com/download)
+
+Bazel Extension: [Bazel](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel)
 
 ## Useful links
 
