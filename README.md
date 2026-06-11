@@ -16,6 +16,7 @@ Windows
 ```
 winget install Bazel.Bazelisk
 ```
+Install C++ essentials: https://aka.ms/vc14/vc_redist.x86.exe
 Ubuntu
 ```
 sudo apt-get install npm
@@ -33,6 +34,14 @@ Extensions:
 * [Bazel Central Registry](https://registry.bazel.build/) - Registry of publicly available Bazel rules
 
 ## Task List
+
+### -1) Clone this repository
+
+```
+git clone https://github.com/molleer/bazel-workshop.git
+cd bazel-workshop
+git submodule update --init --recursive
+```
 
 ### 1) Install bazelisk
 
